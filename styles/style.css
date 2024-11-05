@@ -2,6 +2,10 @@ body {
   text-align: center;
   background-color: rgb(255, 216, 249);
 }
+nav.navbar {
+  border-bottom: 1px solid black;
+  background: rgb(255, 216, 249);
+}
 /* section {
   border: 1px solid black;
 } */
@@ -25,5 +29,5 @@ span.flagImage {
   padding: 5% 2%;
 }
 section.about {
-  background-color: lightpink;
+  /* background-color: lightpink; */
 }

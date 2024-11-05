@@ -21,7 +21,7 @@
   <body>
     <div class="container-fluid">
       <!--Navigation Menu-->
-      <nav class="navbar navbar-expand-lg bg-light bg-body-light">
+      <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
           <p class="brand">Novia Hoyte</p>
 
@@ -50,20 +50,20 @@
               <li class="nav-item p-2">
                 <a
                   class="navbarLinks"
-                  href="projects.html"
+                  href="#projects"
                   title="View my projects"
                   >Projects</a
                 >
               </li>
               <li class="nav-item p-2">
-                <a class="navbarLinks" href="about.html" title="More about me"
+                <a class="navbarLinks" href="#about" title="More about me"
                   >About Me</a
                 >
               </li>
               <li class="nav-item p-2">
                 <a
                   class="navbarLinks"
-                  href="contact.html"
+                  href="#contact"
                   title="View contact information"
                   >Contact Me</a
                 >
@@ -120,7 +120,7 @@
       <!--End Section 1-->
 
       <!--Section 2-->
-      <section class="about">
+      <section class="about" id="about">
         <div class="container aboutSection">
          <h1 class="about">About Me 👩🏾</h1>
       <div class="row p-2 m-2">
@@ -149,7 +149,7 @@
       <!--End Section 2-->
 
       <!--Section 3-->
-      <section class="projects">
+      <section class="projects" id="projects">
         <div class="container projectsSection">
              <h1 class="projects">Check out what I've been working on! ✍🏾</h1>
 <!--Row 1-->      
@@ -207,8 +207,8 @@
           <img src="images\Music.png" alt="Vivian Vanderline Music" class="img-fluid projects">
         </div>
       </div>
-<!--Row 5-->      
-      <div class="row">
+<!--Row 5 - Weather App Vanilla JS-->      
+      <!-- <div class="row">
         <div class="d-none d-md-inline col">
           <img src="images\WeatherApp.png" alt="WeatherApp" class="img-fluid projects">
         </div>
@@ -221,9 +221,12 @@
           </p>
           <div class="d-flex projectButtons"><a href="https://novia-weather-app.netlify.app/" target="_blank" class="projectLinks" title="Weather Search Engine">View App</a></div>
         </div>
-      </div>
-<!--Row 6-->      
+      </div> -->
+<!--Row 6 - World Clock-->      
       <div class="row">
+        <div class="d-none d-md-inline col">
+          <img src="images\WorldClock.png" alt="WorldClock" class="img-fluid projects">
+        </div>
         <div class="col">
           <h3 class="projects">Word Clock</h1>          
           <h2 class="projects">Skills utilized: HTML, CSS, JavaScript, Git, Hosting</h2>
@@ -233,12 +236,9 @@
           </p>
           <div class="d-flex projectButtons"><a href="https://novia-world-clock.netlify.app/" target="_blank" class="projectLinks" title="World Clock"> View App</a></div> 
           </div>
-        <div class="d-none d-md-inline col">
-          <img src="images\WorldClock.png" alt="WorldClock" class="img-fluid projects">
-        </div>
       </div>
-<!--Row 7-->
-      <div class="row">
+<!--Row 7 - Hobby Nails Page-->
+      <!-- <div class="row">
         <div class="d-none d-md-inline col">
           <img src="images\HobbyPage_Nails.png" alt="HobbyPage" class="img-fluid projects">
         </div>
@@ -251,9 +251,9 @@
           </p> 
           <div class="d-flex projectButtons"><a href="https://novia-hobby-project.netlify.app/" target="_blank" class="projectLinks" title="Hobby Page - Nail Art">View App</a></div>
           </div>
-      </div>
-<!--Row 8-->
-      <div class="row">
+      </div> -->
+<!--Row 8 - Math Page-->
+      <!-- <div class="row">
         <div class="col">  
           <h3 class="projects">Interest Page - Mathematics</h1>  
           <h2 class="projects">Skills utilized: HTML, CSS, and JavaScript</h2>
@@ -268,11 +268,11 @@
       </div>  
     </div>
         </div>
-      </section>
+      </section> -->
       <!--End Section 3-->
 
       <!--Section 4 - Footer-->
-      <section class="footerSection">
+      <section class="footerSection" id="contact">
         <div class="row">
             <div class="col">
                 <h3> Social Media</h3>                 
@@ -297,7 +297,7 @@
             <div class="col">
                 <h3>About this Website</h3>
                  <p class="footer">
-              This website is coded by Novia Hoyte. It is open-sourced on
+              This website is coded by <strong>Novia Hoyte</strong>. It is open-sourced on
               <a
                 href="https://github.com/nhoyte/Novia-Portfolio-2"
                 target="_blank"
