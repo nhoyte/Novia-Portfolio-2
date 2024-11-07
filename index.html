@@ -36,7 +36,7 @@
     <title>Novia's Portfolio</title>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid" id="home">
       
       <!--Section 1 - Hero-->
       <section class="hero">
@@ -95,7 +95,7 @@
                 <a
                   class="navbarLinks active"
                   aria-current="page"
-                  href="/"
+                  href="#home"
                   title="Homepage"
                   >Home</a
                 >
@@ -128,28 +128,32 @@
       <!--End Navigation Menu-->
 
       <!--Section 2 - About Me-->
-      <section class="about" id="about">
-        <div class="container aboutSection">
-         <h1 class="about">About Me 👩🏾</h1>
-      <div class="row p-2 m-2">
-        <div class="col-lg">
+      <section class="container-fluid about" id="about">
+        <div class="aboutSection">
+          <div class="wrapper">
+            <h1 class="about">About Me</h1>
+            <div class="gold-box"></div>
+            <div class="pink-box"></div>
+          </div>
+      <!-- <div class="row"> -->
+        <!-- <div class="col-lg">
           <img class="img-fluid avatar" src="images/Avatar.png" alt="Novia">
-        </div>
+        </div> -->
         <div class="col-lg aboutParagraph">
           <p class="overflow-auto">
             Novia Hoyte started out as a Mathematics/Criminal Justice major with plans
-            to attend a top law school and become a prosecutor. As a part of her 
-            required coursework, Novia took several coding courses including C++, 
-            Java, and MySQL. These courses planted the seed of interest that set 
-            Novia onto an alternate path.<br><br>
-            
+            to attend a top law school and become a prosecutor. As required coursework, 
+            Novia took several coding courses including C++, Java, and MySQL. These courses 
+            planted the seed of interest that set Novia onto an alternate path.            
             Upon finishing her B.S. in Mathematics and B.A. in Criminal Jutice in 
             2015, she decided to enroll in graduate school as an Information Technology 
             major, forgoeing her prior plans to attend law school.<br><br>
 
             After completing her M.S. in Information Technology, Novia was confident
-            that she made the right choice! She loves to learn and enjoys the ever-changing 
-            flow of technology. 
+            that she made the right choice! She is constantly intrigued by the ever-changing 
+            flow of technology. <br><br>
+            
+            <strong>Fun Fact:</strong> Novia loves music, Thriller/Mystery novels, and the color pink!
           </p>
         </div>
         </div>
@@ -157,7 +161,7 @@
       <!--End Section 2-->
 
       <!--Section 3 - Projects-->
-      <section class="projects" id="projects">
+      <section class="projects"  id="projects">
         <div class="container projectsSection">
              <h1 class="projects">Check out what I've been working on! ✍🏾</h1>
 <!--Row 1 - Dictionary App-->      
