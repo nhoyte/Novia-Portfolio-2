@@ -14,11 +14,11 @@ div.container-fluid {
   padding: 2px;
 }
 nav.navbar {
-  margin: 1% 15% 5% 15%;
+  margin: 1% 0 5% 0;
   border-bottom: 1px solid black;
   border-radius: 5px;
   background-color: #f0ede6;
-  padding: 0;
+  padding: 0 6%;
   font-size: 35px;
   line-height: 1.5;
 }
@@ -156,7 +156,7 @@ h1.about {
 .pink-box {
   position: absolute;
   z-index: 1;
-  background: var(--primary-color);
+  background: #f5269f;
   width: 305px;
   left: 20px;
   top: 45px;
@@ -170,12 +170,12 @@ div.aboutSection {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
-  max-width: 65%;
-  padding: 8% 12%;
+  max-width: 60%;
+  padding: 8% 8%;
 }
 div.aboutParagraph {
   max-width: 75%;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 500;
   margin: 10% 3% 5% 15%;
   text-align: justify;
