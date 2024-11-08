@@ -52,7 +52,7 @@
               ><img src="images/flag.png" alt="USA Flag"
             /></span>
           </h2>
-          <div class="home-paragraph">
+          <div class="hero-paragraph">
             <p>
               I love writing code and making ideas come to life! Scroll down to
               learn more about me, contact me, or check out some of my work 👇🏾
@@ -130,11 +130,11 @@
       <!--Section 2 - About Me-->
       <section class="container-fluid about" id="about">
         <div class="aboutSection">
-          <div class="wrapper">
-            <h1 class="about">About Me</h1>
-            <div class="gold-box"></div>
-            <div class="pink-box"></div>
-          </div>
+            <div class="wrapper">
+              <h1 class="about">About Me</h1>
+              <div class="gold-box"></div>
+              <div class="pink-box"></div>
+            </div>
       <!-- <div class="row"> -->
         <!-- <div class="col-lg">
           <img class="img-fluid avatar" src="images/Avatar.png" alt="Novia">
@@ -147,11 +147,11 @@
             planted the seed of interest that set Novia onto an alternate path.            
             Upon finishing her B.S. in Mathematics and B.A. in Criminal Jutice in 
             2015, she decided to enroll in graduate school as an Information Technology 
-            major, forgoeing her prior plans to attend law school.<br><br>
+            major, forgoeing her prior plans to attend law school.<br/><br/>
 
             After completing her M.S. in Information Technology, Novia was confident
             that she made the right choice! She is constantly intrigued by the ever-changing 
-            flow of technology. <br>
+            flow of technology. <br/><br/>
             
             <span class="funFact">Fun Fact:</span> Novia loves music, Thriller/Mystery novels, and the color pink!
           </p>
@@ -160,26 +160,41 @@
       </section>
       <!--End Section 2-->
 <!--Section 3 - Technologies-->
+      <div class="container technology">
+        <div class="wrapper">
+          <h1 class="technology">Technologies</h1>
+          <div class="gold-box"></div>
+          <div class="pink-box"></div>
+        </div>
+      </div>
       <section class="technologies">
-        <div class="container technologies">
-          <h1 class="technologies">
-            Technologies I've Learned:
-          </h1>
-          <img src="/images/2Technologies.png" alt="Technologies" class="technologies">
+        <div class="container">
+          <!-- <h1 class="technologies">
+            Technologies:
+          </h1> -->           
+          <div class="technologyImage">
+            <img src="/images/2Technologies.png" alt="Technologies" class="image-fluid">
+          </div>
         </div>
       </section>
 <!--End Section 3-->
 
 <!--Section 4 - Projects-->
-      <section class="projects"  id="projects">
-        <div class="container projectsSection">
-             <h1 class="projects">Taks a look at my recent projects! 🫣</h1>
+      <div class="container projects">
+        <div class="wrapper">
+          <h1 class="projects">Projects</h1>
+          <div class="gold-box"></div>
+          <div class="pink-box"></div>
+        </div>
+      </div>
+      <section class="projects container-fluid"  id="projects">
+        <div class="">
       <!--Row 1 - Dictionary App-->      
             <div class="row">
               <div class="d-none d-md-inline col">
                 <img src="images\Dictionary.png" alt="Dictionary App" class="img-fluid projects">
               </div>
-              <div class="col">
+              <div class="col-5">
                 <h3 class="projects">Dictionary App</h1>
                 <h2 class="projects">Skills utilized: HTML, CSS, JavaScript, Git, API, Hosting.</h2>
                 <p class="projectPara">This Dictionary App is designed to return definitions, synonyms and images of the word inputted by users. 
@@ -190,7 +205,7 @@
             </div>
       <!--Row 2 - React Weather App-->      
       <div class="row">
-        <div class="col">
+        <div class="col-5">
           <h3 class="projects">React Weather App</h1>          
           <h2 class="projects">Skills utilized: HTML, CSS, JavaScript, Git, Hosting</h2>
           <p class="projectPara">This app is a reconstruction of my valinaal Javascript Weather App built with React. This app integrates with SheCodes API. 
@@ -206,7 +221,7 @@
               <div class="d-none d-md-inline col">
                 <img src="images\AI-Poem-Generator.png" alt="AI-Poem-Generator" class="img-fluid projects">
               </div>
-              <div class="col">
+              <div class="col-5">
                 <h3 class="projects">Dictionary App</h1>
                 <h2 class="projects">Skills utilized: HTML, CSS, JavaScript, Git, API, Hosting.</h2>
                 <p class="projectPara">This Dictionary App is designed to return definitions, synonyms and images of the word inputted by users. 
@@ -217,7 +232,7 @@
             </div>
       <!--Row 4 - Vivian Vandeline Music-->      
       <div class="row">
-        <div class="col">
+        <div class="col-5">
           <h3 class="projects">Vivian Vanderline Music</h1>          
           <h2 class="projects">Skills utilized: HTML, CSS, JavaScript, Git, Hosting</h2>
           <p class="projectPara">This site is a responsive music site hightlighting my favorite music artist, Vivian Vanderline!
@@ -235,7 +250,7 @@
         <div class="d-none d-md-inline col">
           <img src="images\WorldClock.png" alt="WorldClock" class="img-fluid projects">
         </div>
-        <div class="col">
+        <div class="col-5">
           <h3 class="projects">Word Clock</h1>          
           <h2 class="projects">Skills utilized: HTML, CSS, JavaScript, Git, Hosting</h2>
           <p class="projectPara">This app displays the current time and date for 4 major cities in the world using Moment.js. 
@@ -245,6 +260,9 @@
           <div class="d-flex projectButtons"><a href="https://novia-world-clock.netlify.app/" target="_blank" class="projectLinks" title="World Clock"> View App</a></div> 
           </div>
       </div>
+
+      </div>
+      </section>
 <!--End Projects-->
 
 <!--Section - Footer-->

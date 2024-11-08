@@ -7,14 +7,13 @@ body {
   font-family: "Aref Ruqaa Ink", serif;
   font-family: "Itim", cursive;
   text-align: center;
-  /* background-color: #f0ede6; */
   background-color: rgb(255, 216, 249);
 }
 div.container-fluid {
   padding: 2px;
 }
 nav.navbar {
-  margin: 1% 0 5% 0;
+  margin: 1% 10% 3% 10%;
   border-bottom: 1px solid black;
   border-radius: 5px;
   background-color: #f0ede6;
@@ -109,6 +108,13 @@ div.heroSectionInner {
   border-top: 2px solid black;
   padding: 2% 2%;
 }
+div.hero-paragraph {
+  align-items: center;
+  max-width: 40%;
+  margin: 15px auto;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.7);
+}
 div.welcome {
   position: relative;
   bottom: 180px;
@@ -135,32 +141,37 @@ span.flagImage {
   border-radius: 10px;
   padding: 5% 2%;
 }
-h1.about {
-  position: absolute;
-  z-index: 3;
-  font-weight: 600;
+heading.about {
+  margin: 0 auto;
 }
 .wrapper {
   position: absolute;
   text-wrap-mode: nowrap;
 }
+h1.about {
+  position: absolute;
+  left: 635px;
+  z-index: 10;
+  font-size: 60px;
+  font-weight: 600;
+}
 .gold-box {
   position: absolute;
-  z-index: 3;
+  z-index: 0;
   background: gold;
-  width: 30px;
-  left: 242px;
-  top: -3em;
-  height: 8em;
+  width: 315px;
+  left: 670px;
+  top: 50px;
+  height: 25px;
 }
 .pink-box {
   position: absolute;
   z-index: 1;
   background: #f5269f;
-  width: 305px;
-  left: 20px;
-  top: 45px;
-  height: 19px;
+  width: 20px;
+  left: 892px;
+  top: -3em;
+  height: 8em;
 }
 section.about {
   margin-bottom: 4%;
@@ -168,40 +179,97 @@ section.about {
 div.aboutSection {
   background-image: url("../images/triangles1.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   margin: 0 auto;
-  max-width: 60%;
-  padding: 8% 8%;
+  max-width: 55%;
+  padding: 4% 5%;
 }
 div.aboutParagraph {
-  max-width: 70%;
+  max-width: 55%;
   font-size: 30px;
   font-weight: 500;
-  margin: 10% 3% 5% 17%;
+  margin: 10% auto;
   text-align: justify;
 }
 span.funFact {
   font-weight: 600;
   color: #f725a0;
+  text-decoration: wavy;
+  text-decoration-line: underline;
+}
+div.technology,
+div.projects {
+  padding: 3% 0;
 }
 section.technologies {
   margin: 2% auto;
 }
-h1.technologies,
-h1.projects {
-  font-size: 70px;
-  font-weight: 550;
-  margin-bottom: 5%;
+h1.technology {
+  position: absolute;
+  left: 475px;
+  z-index: 10;
+  font-size: 60px;
+  font-weight: 600;
 }
-div.home-paragraph {
-  align-items: center;
-  max-width: 40%;
-  margin: 15px auto;
-  font-size: 22px;
-  color: rgba(0, 0, 0, 0.7);
+.technology .gold-box {
+  position: absolute;
+  z-index: 0;
+  background: gold;
+  width: 370px;
+  left: 530px;
+  top: 50px;
+  height: 25px;
+}
+.technology .pink-box {
+  position: absolute;
+  z-index: 1;
+  background: #f5269f;
+  width: 20px;
+  left: 810px;
+  top: -3em;
+  height: 8em;
+}
+div.technologyImage {
+  margin: 2% auto;
+}
+.technologyImage img {
+  width: 1000px;
 }
 section.projects {
-  margin: 6% auto;
+  max-width: 65%;
+  margin: 4% auto;
+}
+h1.projects {
+  position: absolute;
+  left: 520px;
+  z-index: 10;
+  font-size: 60px;
+  font-weight: 600;
+}
+.projects .gold-box {
+  position: absolute;
+  z-index: 0;
+  background: gold;
+  width: 310px;
+  left: 530px;
+  top: 50px;
+  height: 25px;
+}
+.projects .pink-box {
+  position: absolute;
+  z-index: 1;
+  background: #f5269f;
+  width: 20px;
+  left: 750px;
+  top: -3em;
+  height: 8em;
+}
+.projects .row {
+  margin: 8% 0;
+}
+.projects img {
+  border-radius: 8px;
 }
 section.footerSection {
   background-color: #f0ede6;
