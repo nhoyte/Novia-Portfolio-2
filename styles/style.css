@@ -12,20 +12,21 @@ body {
 div.container-fluid {
   padding: 2px;
 }
+div.navigation {
+  padding: 5px;
+}
 nav.navbar {
   margin: 1% 10% 3% 10%;
   border-bottom: 1px solid black;
   border-radius: 5px;
   background-color: #f0ede6;
-  padding: 0 6%;
-  font-size: 35px;
-  line-height: 1.5;
+  font-size: 22px;
 }
 p.brand {
+  margin: 0;
   font-family: "Inknut Antiqua", serif;
   font-weight: 550;
-  margin-top: 15px;
-  font-size: 35px;
+  font-size: 24px;
 }
 a.navbarLinks:hover {
   text-decoration: underline;
@@ -41,28 +42,33 @@ a.active {
 }
 img.heroImage {
   position: relative;
-  bottom: 300px;
+  bottom: 210px;
   height: 15%;
-  width: 30%;
+  width: 25%;
   border-radius: 45%;
   border: 3px solid black;
   margin: 6% 0 0 0;
 }
 h3 {
-  font-size: 30px;
+  font-size: 25px;
   color: var(--primary-color);
 }
 h3.home {
-  margin-top: 30px;
+  font-size: 20px;
+  margin-bottom: 0;
 }
 h1 {
   font-size: 55px;
+}
+h1.home {
+  font-size: 35px;
 }
 h2 {
   color: var(--secondary-color);
   font-size: 35px;
 }
 h2.home {
+  font-size: 20px;
   margin-bottom: 3%;
 }
 p {
@@ -96,8 +102,10 @@ section.hero {
   background-image: url("/images/1background-spray.png");
   background-repeat: no-repeat;
   background-size: contain;
+  padding: 2%;
 }
 div.heroSectionInner {
+  max-width: 50%;
   background: linear-gradient(
     180deg,
     hsla(42, 25%, 92%, 1) 35%,
@@ -109,31 +117,30 @@ div.heroSectionInner {
   padding: 2% 2%;
 }
 div.hero-paragraph {
-  align-items: center;
-  max-width: 40%;
+  max-width: 50%;
   margin: 15px auto;
-  font-size: 22px;
+  font-size: 18px;
   color: rgba(0, 0, 0, 0.7);
 }
 div.welcome {
   position: relative;
-  bottom: 180px;
+  bottom: 130px;
   margin: 0 auto;
   text-align: center;
 }
 h1.welcomeText {
   color: rgb(175 14 137);
-  font-size: 70px;
+  font-size: 40px;
   font-family: "Playwrite HR", cursive;
 }
 div.heroText {
   position: relative;
-  top: -260px;
+  bottom: 200px;
 }
 span.flagImage {
   display: inline-flex;
-  width: 25px;
-  height: 25px;
+  width: 16px;
+  height: 16px;
 }
 .heroSection {
   background-color: #f0ede6;
@@ -150,46 +157,56 @@ heading.about {
 }
 h1.about {
   position: absolute;
-  left: 635px;
+  left: 550px;
   z-index: 10;
-  font-size: 60px;
+  font-size: 35px;
   font-weight: 600;
 }
 .gold-box {
   position: absolute;
   z-index: 0;
   background: gold;
-  width: 315px;
-  left: 670px;
-  top: 50px;
-  height: 25px;
+  height: 18px;
+  width: 185px;
 }
 .pink-box {
   position: absolute;
   z-index: 1;
   background: #f5269f;
-  width: 20px;
-  left: 892px;
-  top: -3em;
-  height: 8em;
+  width: 10px;
+  height: 95px;
+}
+.about .gold-box {
+  left: 560px;
+  top: 25px;
+}
+.about .pink-box {
+  left: 695px;
+  top: -25px;
 }
 section.about {
   margin-bottom: 4%;
 }
-div.aboutSection {
+div.about {
+  padding: 3%;
+}
+section.about {
+  max-width: 50%;
   background-image: url("../images/triangles1.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
   margin: 0 auto;
-  max-width: 55%;
-  padding: 4% 5%;
+  padding: 5%;
+}
+div.aboutSectionInner {
+  padding: 0 15%;
 }
 div.aboutParagraph {
-  max-width: 55%;
-  font-size: 30px;
   font-weight: 500;
-  margin: 10% auto;
+  margin: 0 auto;
+}
+.about p {
+  font-size: 18px;
   text-align: justify;
 }
 span.funFact {
@@ -209,32 +226,22 @@ h1.technology {
   position: absolute;
   left: 475px;
   z-index: 10;
-  font-size: 60px;
+  font-size: 35px;
   font-weight: 600;
 }
 .technology .gold-box {
-  position: absolute;
-  z-index: 0;
-  background: gold;
-  width: 370px;
   left: 530px;
   top: 50px;
-  height: 25px;
 }
 .technology .pink-box {
-  position: absolute;
-  z-index: 1;
-  background: #f5269f;
-  width: 20px;
   left: 810px;
   top: -3em;
-  height: 8em;
 }
 div.technologyImage {
   margin: 2% auto;
 }
 .technologyImage img {
-  width: 1000px;
+  width: 500px;
 }
 section.projects {
   max-width: 65%;
@@ -244,26 +251,16 @@ h1.projects {
   position: absolute;
   left: 520px;
   z-index: 10;
-  font-size: 60px;
+  font-size: 35px;
   font-weight: 600;
 }
 .projects .gold-box {
-  position: absolute;
-  z-index: 0;
-  background: gold;
-  width: 310px;
   left: 530px;
   top: 50px;
-  height: 25px;
 }
 .projects .pink-box {
-  position: absolute;
-  z-index: 1;
-  background: #f5269f;
-  width: 20px;
   left: 750px;
   top: -3em;
-  height: 8em;
 }
 .projects .row {
   margin: 8% 0;
