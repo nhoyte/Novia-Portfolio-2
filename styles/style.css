@@ -13,7 +13,7 @@ div.container-fluid {
   padding: 2px;
 }
 div.navigation {
-  padding: 5px;
+  /* padding: 5px; */
 }
 nav.navbar {
   margin: 1% 10% 3% 10%;
@@ -86,18 +86,6 @@ div a.buttons {
   box-shadow: var(--button-shadow);
   text-decoration: none;
 }
-a.projectLinks {
-  font-size: 20px;
-  text-align: center;
-  margin-left: 25px;
-  padding: 12px 25px;
-  border: 2px solid var(--primary-color);
-  border-radius: 4px;
-  background: #e0e0e0;
-  color: var(--primary-color);
-  box-shadow: var(--button-shadow);
-  text-decoration: none;
-}
 section.hero {
   background-image: url("/images/1background-spray.png");
   background-repeat: no-repeat;
@@ -155,40 +143,24 @@ heading.about {
   position: absolute;
   text-wrap-mode: nowrap;
 }
-h1.about {
-  position: absolute;
-  left: 550px;
-  z-index: 10;
+h1.about,
+h1.technology,
+h1.projectsTitle {
   font-size: 35px;
   font-weight: 600;
-}
-.gold-box {
-  position: absolute;
-  z-index: 0;
-  background: gold;
-  height: 18px;
-  width: 185px;
-}
-.pink-box {
-  position: absolute;
-  z-index: 1;
-  background: #f5269f;
-  width: 10px;
-  height: 95px;
-}
-.about .gold-box {
-  left: 560px;
-  top: 25px;
-}
-.about .pink-box {
-  left: 695px;
-  top: -25px;
+  margin: 0;
 }
 section.about {
   margin-bottom: 4%;
 }
-div.about {
-  padding: 3%;
+div.about,
+div.projects,
+div.technology {
+  background-image: url(../images/headingBackground.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 2% 3%;
 }
 section.about {
   max-width: 50%;
@@ -215,27 +187,12 @@ span.funFact {
   text-decoration: wavy;
   text-decoration-line: underline;
 }
-div.technology,
-div.projects {
-  padding: 3% 0;
+div.technology {
+  margin-top: 3%;
+  padding: 3%;
 }
 section.technologies {
-  margin: 2% auto;
-}
-h1.technology {
-  position: absolute;
-  left: 475px;
-  z-index: 10;
-  font-size: 35px;
-  font-weight: 600;
-}
-.technology .gold-box {
-  left: 530px;
-  top: 50px;
-}
-.technology .pink-box {
-  left: 810px;
-  top: -3em;
+  margin: 0 auto;
 }
 div.technologyImage {
   margin: 2% auto;
@@ -243,36 +200,69 @@ div.technologyImage {
 .technologyImage img {
   width: 500px;
 }
+h1.projects {
+  font-size: 30px;
+  color: #f5269f;
+  margin-bottom: 0;
+}
+h2.projects {
+  font-size: 20px;
+  margin-bottom: 3%;
+}
+p.projectDesc {
+  font-size: 16px;
+}
+div.projects {
+  margin-top: 8%;
+}
 section.projects {
   max-width: 65%;
-  margin: 4% auto;
+  margin: 0 auto;
 }
-h1.projects {
-  position: absolute;
-  left: 520px;
-  z-index: 10;
-  font-size: 35px;
-  font-weight: 600;
+div.projectDescriptionLeft {
+  text-align: left;
 }
-.projects .gold-box {
-  left: 530px;
-  top: 50px;
+div.projectDescriptionRight {
+  text-align: right;
 }
-.projects .pink-box {
-  left: 750px;
-  top: -3em;
+div.projectButtonRight {
+  align-items: end;
 }
 .projects .row {
-  margin: 8% 0;
+  margin: 5% 0 14% 0;
 }
-.projects img {
-  border-radius: 8px;
+img.projects {
+  max-width: 85%;
+  border-radius: 10px;
+}
+img.projects:hover {
+  transform: scale(1.2);
+}
+img.projectsRight {
+  float: right;
+}
+img.projectsLeft {
+  float: left;
+}
+a.projectLinks {
+  font-size: 20px;
+  text-align: center;
+  padding: 12px 25px;
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+  background: #f0ede6;
+  color: var(--primary-color);
+  box-shadow: var(--button-shadow);
+  text-decoration: none;
+}
+a.projectLinks:hover {
+  background-color: #e1ded6;
 }
 section.footerSection {
   background-color: #f0ede6;
-  margin: 5% auto;
+  margin: 2% 3%;
   border-radius: 10px;
-  padding: 5% 10%;
+  padding: 2% 6%;
 }
 div.footerSocialMedia {
   text-align: left;
