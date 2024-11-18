@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link
+    <link
       href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@700&family=Itim&display=swap"
       rel="stylesheet"
-    /> -->
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -41,15 +41,15 @@
     <link rel="stylesheet" href="styles/style.css" />
     <title>Novia's Portfolio</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="0">
     <div class="container-fluid" id="home">
       <!--Section 1 - Hero-->
-      <section class="hero">
+      <section class="hero" id="home">
         <div class="container heroSectionInner">
           <img
             src="images/Novia-black.jpg"
             alt="Novia Headshot"
-            class="heroImage"
+            class="heroHeadshotImage"
           />
           <div class="heroText">
             <h3 class="home">👋🏾 Hi, my name is</h3>
@@ -94,13 +94,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto me-0 mb-lg-0">
               <li class="nav-item">
-                <a
-                  class="navbarLinks active"
-                  aria-current="page"
-                  href="#home"
-                  title="Homepage"
-                  >Home</a
-                >
+                <a class="navbarLinks" href="#home" title="Homepage">Home</a>
               </li>
               <li class="nav-item">
                 <a class="navbarLinks" href="#about" title="More about me"
@@ -125,34 +119,36 @@
         </div>
       </nav>
       <!--End Navigation Menu-->
-
-      <!--Section 2 - About Me-->
-      <div class="about">
-        <h1 class="about">About Me</h1>
-      </div>
-      <section class="container-fluid about" id="about">
-        <div class="container aboutSectionInner">
-          <div class="col-lg aboutParagraph">
-            <p class="overflow-auto">
-              Novia Hoyte started out as a Mathematics/Criminal Justice major
-              with plans to attend a top law school and become a prosecutor. As
-              required coursework, Novia took several coding courses including
-              C++, Java, and MySQL. These courses planted the seed of interest
-              that set Novia onto an alternate path. Upon finishing her B.S. in
-              Mathematics and B.A. in Criminal Jutice in 2015, she decided to
-              enroll in graduate school as an Information Technology major,
-              forgoeing her prior plans to attend law school.<br /><br />
-
-              After completing her M.S. in Information Technology, Novia was
-              confident that she made the right choice! She is constantly
-              intrigued by the ever-changing flow of technology. <br /><br />
-
-              <span class="funFact">Fun Fact:</span> Novia loves music,
-              Thriller/Mystery novels, and the color pink!
-            </p>
-          </div>
+      <div id="about">
+        <!--Section 2 - About Me-->
+        <div class="about">
+          <h1 class="about">About Me</h1>
         </div>
-      </section>
+        <section class="container-fluid about">
+          <div class="container aboutSectionInner">
+            <div class="col-lg aboutParagraph">
+              <p class="overflow-auto">
+                Novia Hoyte started out as a Mathematics/Criminal Justice major
+                with plans to attend a top law school and become a prosecutor.
+                As required coursework, Novia took several coding courses
+                including C++, Java, and MySQL. These courses planted the seed
+                of interest that set Novia onto an alternate path. Upon
+                finishing her B.S. in Mathematics and B.A. in Criminal Jutice in
+                2015, she decided to enroll in graduate school as an Information
+                Technology major, forgoeing her prior plans to attend law
+                school.<br /><br />
+
+                After completing her M.S. in Information Technology, Novia was
+                confident that she made the right choice! She is constantly
+                intrigued by the ever-changing flow of technology. <br /><br />
+
+                <span class="funFact">Fun Fact:</span> Novia loves music,
+                Thriller/Mystery novels, and the color pink!
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
       <!--End Section 2-->
       <!--Section 3 - Technologies-->
       <div class="technology">
@@ -194,12 +190,13 @@
           <div class="col-5 projectDescriptionLeft">
             <h1 class="projects">Dictionary App</h1>
             <h2 class="projects">
-              Built Using: HTML, CSS, JavaScript, Git, API, Hosting.
+              Built Using: HTML, CSS, JavaScript, React, API, Git, Hosting.
             </h2>
             <p class="projectDesc">
               This Dictionary App is designed to return definitions, synonyms
               and images of the word inputted by users. This app was built using
-              React and integrates with the SheCodes Dictionary API.
+              React and integrates with the Free Dictionary API and SheCodes
+              Images API.
             </p>
             <div class="projectButtonLeft">
               <a
@@ -217,11 +214,11 @@
           <div class="col-5 projectDescriptionRight">
             <h1 class="projects">React Weather App</h1>
             <h2 class="projects">
-              Built Using: HTML, CSS, JavaScript, Git, Hosting
+              Built Using: HTML, CSS, JavaScript, React, API, Git, Hosting
             </h2>
             <p class="projectDesc">
-              This app is a reconstruction of my valinaal Javascript Weather App
-              built with React. This app integrates with SheCodes API.
+              This app is a reconstruction of my Vanilla Javascript Weather App
+              built with React. This app integrates with SheCodes Weather API.
             </p>
             <div class="projectButtonRight">
               <a
@@ -266,12 +263,15 @@
           <div class="col-5 projectDescriptionLeft">
             <h1 class="projects">AI Poem Generator</h1>
             <h2 class="projects">
-              Built Using: HTML, CSS, JavaScript, Git, API, Hosting.
+              Built Using: HTML, CSS, JavaScript, JS plugins, React, API, Git,
+              Hosting.
             </h2>
             <p class="projectDesc">
-              This Dictionary App is designed to return definitions, synonyms
-              and images of the word inputted by users. This app was built using
-              React and integrates with the SheCodes Dictionary API.
+              This AI Poem Generator App utilizes artificial intelligence to
+              construct a 5-7 line poem about a topic inputted by the user. This
+              app was built with React and integrates with the SheCodes AI API.
+              This app also utilizes a typewriter JS Plugin to display the poem
+              using a typewriter effect.
             </p>
             <div class="projectButtonLeft">
               <a
@@ -405,7 +405,7 @@
           </div>
           <div class="col footerContact">
             <h3>Contact Me</h3>
-            <p>✉️ noviahoyte@gmail.com</p>
+            <p id="contact-email"></p>
           </div>
         </div>
       </section>

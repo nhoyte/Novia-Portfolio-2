@@ -4,6 +4,7 @@
   --button-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 body {
+  position: relative;
   font-family: "Aref Ruqaa Ink", serif;
   font-family: "Itim", cursive;
   text-align: center;
@@ -36,13 +37,17 @@ li.nav-item {
   padding: 0 15px;
 }
 a.active {
-  color: var(--primary-color) !important;
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  padding: 7px;
+  border-radius: 5px;
 }
-img.heroImage {
+img.heroHeadshotImage {
   position: relative;
+  z-index: 999;
   bottom: 210px;
-  height: 15%;
-  width: 25%;
+  height: 20%;
+  width: 30%;
   border-radius: 45%;
   border: 3px solid black;
   margin: 6% 0 0 0;
@@ -83,7 +88,7 @@ section.hero {
   background-image: url("/images/1background-spray.png");
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 2%;
+  padding: 1%;
 }
 div.heroSectionInner {
   max-width: 50%;
@@ -257,13 +262,17 @@ a.projectLinks:hover {
   background-color: #e1ded6;
 }
 section.footerSection {
+  max-width: 80%;
   background-color: #f0ede6;
-  margin: 2% 3%;
+  margin: 2% auto;
   border-radius: 10px;
   padding: 2% 6%;
 }
 div.footerSocialMedia {
   text-align: left;
+}
+a.footer {
+  font-size: 18px;
 }
 div.footerContact {
   text-align: right;

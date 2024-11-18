@@ -13,3 +13,11 @@ typewriter
   .typeString("Welcome to my site!")
   .pauseFor(5)
   .start();
+
+//Construct contact me email address for obscurity
+let username = "noviahoyte";
+let domain = "@gmail.com";
+let contactEmail = document.querySelector("#contact-email");
+contactEmail.innerHTML = `✉️ <a href="mailto:${username}${domain}">Send an E-mail</a>`;
+
+$("body").scrollspy({ target: "#navbar-navigation" });
