@@ -235,12 +235,6 @@ img.projects {
 img.projects:hover {
   transform: scale(1.3);
 }
-img.projectsRight {
-  float: right;
-}
-img.projectsLeft {
-  float: left;
-}
 a.projectLinks {
   font-size: 20px;
   text-align: center;
@@ -613,5 +607,375 @@ div.footerContact {
   p.footer,
   a.footer {
     font-size: 16px;
+  }
+}
+
+/**X-Large (wide) Screen **/
+@media (1200px <= width < 2560) {
+  /** Home Hero Section **/
+  div.heroSectionInner {
+    max-width: 55%;
+  }
+  img.heroHeadshotImage {
+    bottom: 350px;
+    height: 35%;
+    width: 35%;
+    margin: 10% 0 0 0;
+  }
+  div.heroText {
+    bottom: 300px;
+  }
+  h1.home {
+    font-size: 90px;
+  }
+  h2.home {
+    font-size: 75px;
+  }
+  h3.home {
+    font-size: 70px;
+  }
+  div.hero-paragraph {
+    max-width: 70%;
+    font-size: 35px;
+  }
+  img.usaFlag {
+    width: 55px;
+    height: 35px;
+  }
+
+  h1.welcomeText {
+    font-size: 70px;
+  }
+  /** Navbar Menu Section **/
+  nav.navbar {
+    font-size: 45px;
+    margin: 0 5% 4% 5%;
+    padding: 20px 0;
+  }
+  p.brand {
+    font-size: 45px;
+  }
+  li.nav-item {
+    margin: 0;
+  }
+  a.active {
+    padding: 20px;
+  }
+
+  /** About Section **/
+  h1.about,
+  h1.technology,
+  h1.projectsTitle {
+    font-size: 65px;
+  }
+  div.about,
+  div.projects {
+    padding: 3%;
+  }
+  section.about {
+    max-width: 75%;
+  }
+  div.aboutSectionInner {
+    padding: 2% 5%;
+  }
+  .about p {
+    font-size: 35px;
+  }
+
+  /** Technology Section **/
+  div.technology {
+    padding: 4% 3%;
+  }
+  .technologyImage img {
+    width: 1000px;
+  }
+
+  /** Projects Section **/
+  section.projects {
+    max-width: 100%;
+  }
+  h1.projects {
+    font-size: 65px;
+  }
+  h2.projects {
+    font-size: 40px;
+  }
+  p.projectDesc {
+    font-size: 35px;
+    margin-bottom: 5%;
+  }
+  a.projectLinks {
+    font-size: 40px;
+    padding: 30px 40px;
+  }
+  img.projects {
+    width: 1200px;
+    height: 900px;
+  }
+
+  /** Footer Section **/
+  section.footerSection {
+    max-width: 90%;
+  }
+  h3.footer {
+    font-size: 35px;
+  }
+  p.footer,
+  a.footer {
+    font-size: 30px;
+  }
+  img.footerIcon {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/**Ultra Wide Screen **/
+@media (2560px <= width < 4480) {
+  /** Home Hero Section **/
+  div.heroSectionInner {
+    max-width: 55%;
+    margin: 12% auto 1% auto;
+  }
+  img.heroHeadshotImage {
+    bottom: 450px;
+    height: 35%;
+    width: 35%;
+    margin: 10% 0 0 0;
+  }
+  div.heroText {
+    bottom: 440px;
+  }
+
+  h1.home {
+    font-size: 70px;
+  }
+  h2.home {
+    font-size: 55px;
+  }
+  h3.home {
+    font-size: 50px;
+  }
+  div.hero-paragraph {
+    max-width: 70%;
+    font-size: 35px;
+  }
+  img.usaFlag {
+    width: 55px;
+    height: 35px;
+  }
+  div.welcome {
+    bottom: 330px;
+  }
+  h1.welcomeText {
+    font-size: 70px;
+  }
+  /** Navbar Menu Section **/
+  nav.navbar {
+    font-size: 45px;
+    margin: 0 4% 4% 4%;
+    padding: 20px 0;
+  }
+  p.brand {
+    font-size: 45px;
+  }
+  li.nav-item {
+    margin: 0;
+  }
+  a.active {
+    padding: 20px;
+  }
+
+  /** About Section **/
+  h1.about,
+  h1.technology,
+  h1.projectsTitle {
+    font-size: 65px;
+  }
+  div.about,
+  div.projects {
+    padding: 3%;
+  }
+  section.about {
+    max-width: 75%;
+  }
+  div.aboutSectionInner {
+    padding: 2% 5%;
+  }
+  .about p {
+    font-size: 35px;
+  }
+
+  /** Technology Section **/
+  div.technology {
+    padding: 4% 3%;
+  }
+  .technologyImage img {
+    width: 1000px;
+  }
+
+  /** Projects Section **/
+  section.projects {
+    max-width: 100%;
+  }
+  h1.projects {
+    font-size: 65px;
+  }
+  h2.projects {
+    font-size: 40px;
+  }
+  p.projectDesc {
+    font-size: 35px;
+    margin-bottom: 5%;
+  }
+  a.projectLinks {
+    font-size: 40px;
+    padding: 30px 40px;
+  }
+  img.projects {
+    width: 1200px;
+    height: 900px;
+  }
+
+  /** Footer Section **/
+  section.footerSection {
+    max-width: 90%;
+  }
+  h3.footer {
+    font-size: 35px;
+  }
+  p.footer,
+  a.footer {
+    font-size: 30px;
+  }
+  img.footerIcon {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/**iMac Screen **/
+@media (4480px <= width) {
+  /** Home Hero Section **/
+  div.heroSectionInner {
+    max-width: 55%;
+    margin: 15% auto 1% auto;
+  }
+  img.heroHeadshotImage {
+    bottom: 700px;
+    height: 35%;
+    width: 35%;
+    margin: 10% 0 0 0;
+  }
+  div.heroText {
+    bottom: 650px;
+  }
+  h1.home {
+    font-size: 100px;
+    font-weight: 550;
+  }
+  h2.home {
+    font-size: 90px;
+  }
+  h3.home {
+    font-size: 80px;
+  }
+  div.hero-paragraph {
+    max-width: 70%;
+    font-size: 70px;
+  }
+  img.usaFlag {
+    width: 75px;
+    height: 55px;
+  }
+  div.welcome {
+    bottom: 450px;
+  }
+  h1.welcomeText {
+    font-size: 100px;
+  }
+  /** Navbar Menu Section **/
+  nav.navbar {
+    font-size: 70px;
+    margin: 0 4% 4% 4%;
+    padding: 30px 0;
+  }
+  p.brand {
+    font-size: 70px;
+  }
+  li.nav-item {
+    margin: 0;
+  }
+  a.active {
+    padding: 30px;
+  }
+
+  /** About Section **/
+  h1.about,
+  h1.technology,
+  h1.projectsTitle {
+    font-size: 100px;
+  }
+  div.about,
+  div.projects {
+    padding: 3%;
+  }
+  section.about {
+    max-width: 75%;
+  }
+  div.aboutSectionInner {
+    padding: 2% 5%;
+  }
+  .about p {
+    font-size: 70px;
+  }
+
+  /** Technology Section **/
+  div.technology {
+    padding: 4% 3%;
+  }
+  .technologyImage img {
+    width: 1600px;
+    margin: 0 auto;
+  }
+
+  /** Projects Section **/
+  section.projects {
+    max-width: 100%;
+    padding: 2%;
+  }
+  h1.projects {
+    font-size: 100px;
+  }
+  h2.projects {
+    font-size: 70px;
+  }
+  p.projectDesc {
+    font-size: 70px;
+    margin-bottom: 5%;
+  }
+  a.projectLinks {
+    font-size: 70px;
+    padding: 50px 80px;
+  }
+  img.projects {
+    width: 2000px;
+    height: 1600px;
+  }
+
+  /** Footer Section **/
+  section.footerSection {
+    max-width: 90%;
+  }
+  h3.footer {
+    font-size: 70px;
+  }
+  p.footer,
+  a.footer {
+    font-size: 60px;
+  }
+  img.footerIcon {
+    width: 65px;
+    height: 65px;
   }
 }
