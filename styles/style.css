@@ -5,7 +5,6 @@
 }
 body {
   position: relative;
-  font-family: "Aref Ruqaa Ink", serif;
   font-family: "Itim", cursive;
   text-align: center;
   background-color: rgb(255, 216, 249);
@@ -13,35 +12,22 @@ body {
 div.container-fluid {
   padding: 2px;
 }
-nav.navbar {
-  padding: 8px;
-  margin: 1% 10% 3% 10%;
-  border-bottom: 1px solid black;
-  border-radius: 5px;
-  background-color: #f0ede6;
-  font-size: 25px;
+h1 {
+  font-size: 35px;
 }
-p.brand {
-  margin: 0;
-  font-family: "Inknut Antiqua", serif;
-  font-weight: 550;
-  font-size: 25px;
-}
-a.navbarLinks:hover {
-  text-decoration: underline;
-}
-a.navbarLinks {
+h2 {
   color: var(--secondary-color);
+  font-size: 30px;
 }
-li.nav-item {
-  padding: 0 15px;
+h3 {
+  font-size: 25px;
+  color: var(--primary-color);
 }
-a.active {
-  background-color: var(--primary-color) !important;
-  color: white !important;
-  padding: 7px;
-  border-radius: 5px;
+p {
+  color: rgba(0, 0, 0, 0.7);
 }
+
+/** Home Hero Section **/
 img.heroHeadshotImage {
   position: relative;
   z-index: 999;
@@ -52,37 +38,11 @@ img.heroHeadshotImage {
   border: 3px solid black;
   margin: 6% 0 0 0;
 }
-h3 {
-  font-size: 25px;
-  color: var(--primary-color);
-}
 h3.home {
   margin-bottom: 0;
 }
-h1 {
-  font-size: 35px;
-}
-h2 {
-  color: var(--secondary-color);
-  font-size: 30px;
-}
 h2.home {
   margin-bottom: 3%;
-}
-p {
-  color: rgba(0, 0, 0, 0.7);
-}
-div a.buttons {
-  font-size: 25px;
-  text-align: center;
-  margin: 20px;
-  padding: 16px;
-  border: 2px solid var(--primary-color);
-  border-radius: 4px;
-  background: #e0e0e0;
-  color: var(--primary-color);
-  box-shadow: var(--button-shadow);
-  text-decoration: none;
 }
 section.hero {
   background-image: url("/images/1background-spray.png");
@@ -135,9 +95,38 @@ span.flagImage {
   border-radius: 10px;
   padding: 5% 2%;
 }
-heading.about {
-  margin: 0 auto;
+
+/** Navbar Menu Section **/
+nav.navbar {
+  padding: 8px;
+  margin: 1% 10% 3% 10%;
+  border-bottom: 1px solid black;
+  border-radius: 5px;
+  background-color: #f0ede6;
+  font-size: 25px;
 }
+p.brand {
+  margin: 0;
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 550;
+  font-size: 25px;
+}
+a.navbarLinks:hover {
+  text-decoration: underline;
+}
+a.navbarLinks {
+  color: var(--secondary-color);
+}
+li.nav-item {
+  padding: 0 15px;
+}
+a.active {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  padding: 7px;
+  border-radius: 5px;
+}
+/** About Section **/
 .wrapper {
   position: absolute;
   text-wrap-mode: nowrap;
@@ -148,13 +137,6 @@ h1.projectsTitle {
   font-size: 35px;
   font-weight: 600;
 }
-h1.technology {
-  padding: 5px;
-  margin: 0 40px 10px 5px;
-}
-section.about {
-  margin-bottom: 4%;
-}
 div.about,
 div.projects,
 div.technology {
@@ -164,17 +146,23 @@ div.technology {
   background-position: center;
   padding: 2% 3%;
 }
+heading.about {
+  margin: 0 auto;
+}
 section.about {
-  max-width: 55%;
+  margin-bottom: 4%;
+}
+section.about {
+  max-width: 60%;
   background-image: url("../images/triangles1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
-  padding: 6% 2%;
+  padding: 6% 0;
 }
 div.aboutSectionInner {
-  max-width: 70%;
-  padding: 0 3%;
+  max-width: 75%;
+  padding: 0 5%;
 }
 div.aboutParagraph {
   font-weight: 500;
@@ -190,6 +178,12 @@ span.funFact {
   text-decoration: wavy;
   text-decoration-line: underline;
 }
+/** Technologies Section **/
+h1.technology {
+  padding: 5px;
+  margin: 0 40px 10px 5px;
+}
+
 div.technology {
   margin-top: 3%;
 }
@@ -202,8 +196,10 @@ div.technologyImage {
 .technologyImage img {
   width: 500px;
 }
+/** Projects Section **/
 h1.projects {
   color: #f5269f;
+  font-weight: 580;
   margin-bottom: 0;
 }
 h2.projects {
@@ -261,6 +257,20 @@ a.projectLinks {
 a.projectLinks:hover {
   background-color: #e1ded6;
 }
+div a.buttons {
+  font-size: 25px;
+  text-align: center;
+  margin: 20px;
+  padding: 16px;
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+  background: #e0e0e0;
+  color: var(--primary-color);
+  box-shadow: var(--button-shadow);
+  text-decoration: none;
+}
+
+/** Footer Section **/
 section.footerSection {
   max-width: 80%;
   background-color: #f0ede6;
@@ -271,11 +281,346 @@ section.footerSection {
 div.footerSocialMedia {
   text-align: left;
 }
+h3.footer {
+  font-size: 20px;
+}
 a.footer {
-  font-size: 18px;
+  font-size: 16px;
 }
 div.footerContact {
   text-align: right;
 }
-@media (1400px <= width) {
+
+/**X-Small Screen **/
+@media (width < 576px) {
+  /** Home Hero Section **/
+  div.heroSectionInner {
+    max-width: 95%;
+    margin: 20% auto 1% auto;
+    padding: 4% 2%;
+  }
+  section.hero {
+    background-position: center;
+  }
+  img.heroHeadshotImage {
+    bottom: 130px;
+    height: 45%;
+    width: 45%;
+    margin: 15% 0 20% 0;
+  }
+  div.hero-paragraph {
+    max-width: 80%;
+    font-size: 16px;
+  }
+  h1.home {
+    font-size: 25px;
+  }
+  h2.home {
+    font-size: 20px;
+  }
+  h3.home {
+    font-size: 18px;
+  }
+  h1.welcomeText {
+    font-size: 30px;
+  }
+  /** Navbar Menu Section **/
+  nav.navbar {
+    font-size: 20px;
+    margin: 0 2% 4% 2%;
+  }
+  p.brand {
+    font-size: 20px;
+  }
+  /** About Section **/
+  h1.about,
+  h1.technology,
+  h1.projectsTitle {
+    font-size: 25px;
+  }
+  div.about,
+  div.projects {
+    padding: 6% 3%;
+  }
+  section.about {
+    max-width: 90%;
+    background-position: center;
+  }
+  div.aboutSectionInner {
+    max-width: 85%;
+    padding: 2% 10%;
+  }
+  .about p {
+    font-size: 20px;
+  }
+  /** Technology Section **/
+  div.technology {
+    padding: 6%;
+  }
+  .technologyImage img {
+    width: 400px;
+  }
+  /** Projects Section **/
+  section.projects {
+    max-width: 100%;
+  }
+  div.projects {
+    margin-bottom: 10%;
+  }
+  h1.projects {
+    font-size: 25px;
+  }
+  h2.projects {
+    font-size: 18px;
+  }
+  p.projectDesc {
+    font-size: 18px;
+  }
+  div.projectDescriptionRight,
+  div.projectDescriptionLeft {
+    text-align: justify;
+    margin: 0 5%;
+  }
+  .projects .row {
+    margin: 5% 0 20% 0;
+  }
+
+  /** Footer Section **/
+  section.footerSection {
+    max-width: 95%;
+  }
+  h3.footer {
+    font-size: 16px;
+  }
+  p.footer,
+  a.footer {
+    font-size: 14px;
+  }
+  img.footerIcon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/**Small Screen **/
+@media (576px <= width < 768px) {
+  /** Home Hero Section **/
+  div.heroSectionInner {
+    max-width: 90%;
+  }
+  img.heroHeadshotImage {
+    bottom: 150px;
+    height: 30%;
+    width: 30%;
+    margin: 14% 0 10% 0;
+  }
+  div.hero-paragraph {
+    max-width: 80%;
+  }
+  /** Navbar Menu Section **/
+  nav.navbar {
+    font-size: 20px;
+    margin: 0 2% 4% 2%;
+  }
+  p.brand {
+    font-size: 22px;
+  }
+  /** About Section **/
+  h1.about,
+  h1.technology,
+  h1.projectsTitle {
+    font-size: 30px;
+  }
+  div.about,
+  div.projects {
+    padding: 5% 3%;
+  }
+  div.technology {
+    padding: 5%;
+  }
+  section.about {
+    max-width: 90%;
+    background-position: center;
+  }
+  div.aboutSectionInner {
+    max-width: 85%;
+    padding: 2% 10%;
+  }
+  .about p {
+    font-size: 20px;
+  }
+  /** Projects Section **/
+  section.projects {
+    max-width: 100%;
+  }
+  h1.projects {
+    font-size: 25px;
+  }
+  h2.projects {
+    font-size: 20px;
+  }
+  p.projectDesc {
+    font-size: 20px;
+  }
+  div.projectDescriptionRight,
+  div.projectDescriptionLeft {
+    text-align: justify;
+    margin: 0 5%;
+  }
+  /** Footer Section **/
+  section.footerSection {
+    max-width: 90%;
+  }
+  h3.footer {
+    font-size: 18px;
+  }
+  p.footer,
+  a.footer {
+    font-size: 16px;
+  }
+}
+
+/**Medium Screen **/
+@media (768px <= width < 992px) {
+  /** Home Hero Section **/
+  div.heroSectionInner {
+    max-width: 90%;
+  }
+  img.heroHeadshotImage {
+    bottom: 150px;
+    height: 30%;
+    width: 30%;
+    margin: 14% 0 10% 0;
+  }
+  /** Navbar Menu Section **/
+  nav.navbar {
+    font-size: 20px;
+    margin: 0 2% 4% 2%;
+  }
+  p.brand {
+    font-size: 22px;
+  }
+  /** About Section **/
+  h1.about,
+  h1.technology,
+  h1.projectsTitle {
+    font-size: 30px;
+  }
+  div.about,
+  div.projects {
+    padding: 4% 3%;
+  }
+  div.technology {
+    padding: 3%;
+  }
+  section.about {
+    max-width: 90%;
+    background-position: center;
+  }
+  div.aboutSectionInner {
+    max-width: 85%;
+    padding: 2% 12%;
+  }
+  .about p {
+    font-size: 18px;
+  }
+  /** Projects Section **/
+  section.projects {
+    max-width: 100%;
+  }
+  h1.projects {
+    font-size: 25px;
+  }
+  h2.projects {
+    font-size: 18px;
+  }
+  p.projectDesc {
+    font-size: 18px;
+  }
+  /** Footer Section **/
+  section.footerSection {
+    max-width: 90%;
+  }
+  p.footer,
+  a.footer {
+    font-size: 16px;
+  }
+}
+
+/**Large Screen **/
+@media (992px <= width < 1200px) {
+  /** Home Hero Section **/
+  div.heroSectionInner {
+    max-width: 70%;
+  }
+  img.heroHeadshotImage {
+    bottom: 150px;
+    height: 30%;
+    width: 30%;
+    margin: 10% 0;
+  }
+  h1.home {
+    font-size: 30px;
+  }
+  h2.home {
+    font-size: 25px;
+  }
+  h3.home {
+    font-size: 20px;
+  }
+  div.hero-paragraph {
+    max-width: 70%;
+    font-size: 18px;
+  }
+  h1.welcomeText {
+    font-size: 35px;
+  }
+  /** Navbar Menu Section **/
+  nav.navbar {
+    font-size: 20px;
+    margin: 0 5% 4% 5%;
+  }
+  p.brand {
+    font-size: 20px;
+  }
+  li.nav-item {
+    padding: 0 8px;
+  }
+
+  /** About Section **/
+  h1.about,
+  h1.technology,
+  h1.projectsTitle {
+    font-size: 25px;
+  }
+  section.about {
+    max-width: 95%;
+  }
+  div.aboutSectionInner {
+    padding: 2% 5%;
+  }
+  .about p {
+    font-size: 18px;
+  }
+  /** Projects Section **/
+  section.projects {
+    max-width: 100%;
+  }
+  h1.projects {
+    font-size: 25px;
+  }
+  h2.projects {
+    font-size: 18px;
+  }
+  p.projectDesc {
+    font-size: 18px;
+  }
+  /** Footer Section **/
+  section.footerSection {
+    max-width: 90%;
+  }
+  p.footer,
+  a.footer {
+    font-size: 16px;
+  }
 }

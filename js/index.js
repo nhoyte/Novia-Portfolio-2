@@ -18,6 +18,6 @@ typewriter
 let username = "noviahoyte";
 let domain = "@gmail.com";
 let contactEmail = document.querySelector("#contact-email");
-contactEmail.innerHTML = `✉️ <a href="mailto:${username}${domain}">Send an E-mail</a>`;
+contactEmail.innerHTML = `✉️ <a href="mailto:${username}${domain}" class="footer">Send an E-mail</a>`;
 
 $("body").scrollspy({ target: "#navbar-navigation" });
