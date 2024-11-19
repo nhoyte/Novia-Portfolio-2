@@ -1,9 +1,3 @@
-// new Typewriter("#welcome-text", {
-//   strings: "Welcome to my site!",
-//   autoStart: true,
-//   delay: 150,
-//   changeCursor: "✒️",
-// });
 const typewriter = new Typewriter("#welcome-text", {
   autoStart: true,
   delay: 150,
@@ -19,5 +13,3 @@ let username = "noviahoyte";
 let domain = "@gmail.com";
 let contactEmail = document.querySelector("#contact-email");
 contactEmail.innerHTML = `✉️ <a href="mailto:${username}${domain}" class="footer">Send an E-mail</a>`;
-
-$("body").scrollspy({ target: "#navbar-navigation" });
